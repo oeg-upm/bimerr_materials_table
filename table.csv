@@ -1,0 +1,30 @@
+concept;attribute;value_type_expected;min_cardinality;max_cardinality;unit_of_measure;reference_energy_plus
+ASHRAE_Material;Conductivity;float;1;1;W/(m*K);Conductivity
+ASHRAE_Material;Density;float;1;1;kg/m^3;Density
+ASHRAE_Material;Thickness;float;1;1;m;Thickness
+ASHRAE_Material;SpecificHeat;float;1;1;J/(kg*K);Specific Heat
+ASHRAE_Material;ThermalAbsorptance;float;1;1;range:(0,1);
+ASHRAE_Material;SolarAbsorptance;float;1;1;range:(0,1);
+ASHRAE_Material;VisibleAbsorptance;float;1;1;range:(0,1);
+ASHRAE_Material;Roughness;choice;1;1;"very smooth; smooth; medium smooth; medium rough; rough; very rough";Roughness
+ASHRAE_Material_AirGap;ThermalResistance;float;1;1;(m^2*K)/W;Thermal Resistance
+ASHRAE_Material_NoMass;ThermalResistance;float;1;1;(m^2*K)/W;Thermal Resistance
+ASHRAE_Material_NoMass;Roughness;choice;1;1;"very smooth; smooth; medium smooth; medium rough; rough; very rough";Roughness
+ASHRAE_Material_NoMass;ThermalAbsorptance;float;1;1;range:(0,1);
+ASHRAE_Material_NoMass;Solar Absorptance;float;1;1;range:(0,1);
+ASHRAE_Material_NoMass;Visible Absorptance;float;1;1;range:(0,1);
+ASHRAE_Material_Glazing;ODT;stringchoice;1;1;"SpectralAverage; Spectral; SpectralAndAngle; BSDF";Optical Data Type
+ASHRAE_Material_Glazing;WGSDSN;string;1;1;;Window Glass Spectral Data Set Name
+ASHRAE_Material_Glazing;Thickness;float;1;1;m;Thickness
+ASHRAE_Material_Glazing;STNI;float;1;1;;Solar Transmittance at Normal Incidence
+ASHRAE_Material_Glazing;FSSRNI;float;1;1;;Front Side Solar Reflectance at Normal Incidence
+ASHRAE_Material_Glazing;BSSRNI;float;1;1;;Back Side Solar Reflectance at Normal Incidence
+ASHRAE_Material_Glazing;VTNI;float;1;1;;Visible Transmittance at Normal Incidence
+ASHRAE_Material_Glazing;FSVRNI;float;1;1;;Front Side Visible Reflectance at Normal Incidence
+ASHRAE_Material_Glazing;BSVRNI;float;1;1;;Back Side Visible Reflectance at Normal Incidence
+ASHRAE_Material_Glazing;ITNI;float;1;1;;Infrared Transmittance at Normal Incidence
+ASHRAE_Material_Glazing;FSIHE;float;1;1;;Front Side Infrared Hemispherical Emissivity
+ASHRAE_Material_Glazing;BSIHE;float;1;1;;Back Side Infrared Hemispherical Emissivity
+ASHRAE_Material_Glazing;Conductivity;float;1;1;W/(m*K);Conductivity {W/m-K}
+ASHRAE_Material_WindowGas;GasType;stringchoice;1;1;"Air;Argon;Krypton;Xenon;Custom";Gas Type
+ASHRAE_Material_WindowGas;Thickness;float;1;1;m;Thickness

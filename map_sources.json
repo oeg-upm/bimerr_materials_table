@@ -1,0 +1,15 @@
+{
+    "datasources": [
+      {
+        "id": "Table Datasource",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.[*]"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "result.json"
+        }
+      }
+    ]
+}
