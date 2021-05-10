@@ -1,0 +1,58 @@
+{
+    "resource_rules": [
+        {
+            "id": "PropertySet",
+            "datasource_ids": [
+                "Table Datasource"
+            ],
+            "subject": "http://data.bimerr.iot.linkeddata.es/resource/PropertySet/{$.concept}",
+            "properties": [
+                {
+                    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "object": "https://bimerr.iot.linkeddata.es/def/building#PropertySet",
+                    "is_literal": "False",
+                    "datatype": ""
+                },
+                {
+                    "predicate": "https://bimerr.iot.linkeddata.es/def/building#hasProperty",
+                    "object": "http://data.bimerr.iot.linkeddata.es/resource/Property/{$.attribute}",
+                    "is_literal": "False",
+                    "datatype": ""
+                }
+            ]
+        },
+        {
+            "id": "Property",
+            "datasource_ids": [
+                "Table Datasource"
+            ],
+            "subject": "http://data.bimerr.iot.linkeddata.es/resource/Property/{$.attribute}",
+            "properties": [
+                {
+                    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "object": "https://saref.etsi.org/core/Property",
+                    "is_literal": "False",
+                    "datatype": ""
+                },
+                {
+                    "predicate": "https://bimerr.iot.linkeddata.es/def/building#min_cardinality",
+                    "object": "{$.min_cardinality}",
+                    "is_literal": "True",
+                    "datatype": "http://www.w3.org/2001/XMLSchema#float"
+                },
+                {
+                    "predicate": "https://bimerr.iot.linkeddata.es/def/building#max_cardinality",
+                    "object": "{$.max_cardinality}",
+                    "is_literal": "True",
+                    "datatype": "http://www.w3.org/2001/XMLSchema#float"
+                },
+                {
+                    "predicate": "https://saref.etsi.org/core/isMeasuredIn",
+                    "object": "{$.unit_of_measure}",
+                    "is_literal": "True",
+                    "datatype": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,214 @@
+@base          <http://helio.linkeddata.es/> .
+<http://data.bimerr.iot.linkeddata.es/resource/Property/BSIHE>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/WGSDSN>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/PropertySet/ASHRAE_Material_NoMass>
+        a       <https://bimerr.iot.linkeddata.es/def/building#PropertySet> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasProperty>
+                <http://data.bimerr.iot.linkeddata.es/resource/Property/ThermalAbsorptance> , <http://data.bimerr.iot.linkeddata.es/resource/Property/Roughness> , <http://data.bimerr.iot.linkeddata.es/resource/Property/ThermalResistance> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/PropertySet/ASHRAE_Material_WindowGas>
+        a       <https://bimerr.iot.linkeddata.es/def/building#PropertySet> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasProperty>
+                <http://data.bimerr.iot.linkeddata.es/resource/Property/Thickness> , <http://data.bimerr.iot.linkeddata.es/resource/Property/GasType> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/SpecificHeat>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "J/(kg*K)"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/Conductivity>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "W/(m*K)"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/STNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/ThermalAbsorptance>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "range:(0,1)"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/SolarAbsorptance>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "range:(0,1)"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/VTNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/VisibleAbsorptance>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "range:(0,1)"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/ThermalResistance>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "(m^2*K)/W"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/BSSRNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/FSIHE>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/BSVRNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/Thickness>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "m"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/PropertySet/ASHRAE_Material>
+        a       <https://bimerr.iot.linkeddata.es/def/building#PropertySet> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasProperty>
+                <http://data.bimerr.iot.linkeddata.es/resource/Property/Roughness> , <http://data.bimerr.iot.linkeddata.es/resource/Property/VisibleAbsorptance> , <http://data.bimerr.iot.linkeddata.es/resource/Property/SolarAbsorptance> , <http://data.bimerr.iot.linkeddata.es/resource/Property/ThermalAbsorptance> , <http://data.bimerr.iot.linkeddata.es/resource/Property/SpecificHeat> , <http://data.bimerr.iot.linkeddata.es/resource/Property/Thickness> , <http://data.bimerr.iot.linkeddata.es/resource/Property/Density> , <http://data.bimerr.iot.linkeddata.es/resource/Property/Conductivity> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/FSSRNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/GasType>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "Air;Argon;Krypton;Xenon;Custom"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/FSVRNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/PropertySet/ASHRAE_Material_Glazing>
+        a       <https://bimerr.iot.linkeddata.es/def/building#PropertySet> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasProperty>
+                <http://data.bimerr.iot.linkeddata.es/resource/Property/FSSRNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/ITNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/FSIHE> , <http://data.bimerr.iot.linkeddata.es/resource/Property/STNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/Conductivity> , <http://data.bimerr.iot.linkeddata.es/resource/Property/Thickness> , <http://data.bimerr.iot.linkeddata.es/resource/Property/VTNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/ODT> , <http://data.bimerr.iot.linkeddata.es/resource/Property/BSIHE> , <http://data.bimerr.iot.linkeddata.es/resource/Property/BSVRNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/BSSRNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/FSVRNI> , <http://data.bimerr.iot.linkeddata.es/resource/Property/WGSDSN> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/ITNI>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "{}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/Roughness>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "very smooth; smooth; medium smooth; medium rough; rough; very rough"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/Density>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "kg/m^3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/Property/ODT>
+        a       <https://saref.etsi.org/core/Property> ;
+        <https://bimerr.iot.linkeddata.es/def/building#max_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/building#min_cardinality>
+                "1"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://saref.etsi.org/core/isMeasuredIn>
+                "SpectralAverage; Spectral; SpectralAndAngle; BSDF"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.bimerr.iot.linkeddata.es/resource/PropertySet/ASHRAE_Material_AirGap>
+        a       <https://bimerr.iot.linkeddata.es/def/building#PropertySet> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasProperty>
+                <http://data.bimerr.iot.linkeddata.es/resource/Property/ThermalResistance> .
