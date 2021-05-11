@@ -35,6 +35,12 @@
                     "datatype": ""
                 },
                 {
+                    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
+                    "object": "The value expected for this property is {$.value_type_expected}",
+                    "is_literal": "True",
+                    "datatype": ""
+                },
+                {
                     "predicate": "https://bimerr.iot.linkeddata.es/def/building#min_cardinality",
                     "object": "{$.min_cardinality}",
                     "is_literal": "True",
